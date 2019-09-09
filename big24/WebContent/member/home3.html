@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* css넣고 */
+    </style>
+    <script>
+        function call() {
+            var data1 = document.getElementById("id").value;
+            var data2 = document.getElementById("pw").value;
+            var data_length = data1.length; //length 읽기전용변수 
+            alert(data_length);
+            if (data_length >= 5) {
+                location.href = "server.jsp?id=" + data1 + "&pw=" + data2;
+            } else {
+                alert("ID의 길이가 5이하이면 가입 불가능합니다.");
+                location.href = "home3.html";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="server.jsp">
+        아이디: <input type="text" name="id" id="id" value="root"><br> 패스워드: <input type="text" name="pw" id="pw" value="1234"><br>
+        <button type="button" onclick="call()">서버로전송</button>
+    </form>
+</body>
+
+</html>
