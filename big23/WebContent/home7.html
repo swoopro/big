@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function sum() {
+            var data1 = document.getElementById("n1"); //Element(구성요소) = 태그 <>
+            var data2 = document.getElementById("n2"); // #n1과 비슷
+            var value1 = data1.value; //input내에 입력한 값을 가져온다
+            var value2 = data2.value;
+            var data11 = parseInt(value1); //입력값이니까var로인식하기때문에 인트로 변환해준다.
+            var data22 = parseInt(value2);
+            var sum = data11 + data22;
+            alert(data11 + " 더하기 " + data22 + "는 " + sum);
+        }
+
+        function minus() {
+            var data1 = document.getElementById("n3");
+            var data2 = document.getElementById("n4");
+            var value1 = data1.value;
+            var value2 = data2.value;
+            var data11 = parseInt(value1);
+            var data22 = parseInt(value2);
+            var minus = data11 - data22;
+            alert(data11 + " 빼기 " + data22 + "는 " + minus);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>숫자 계산</h1>
+    <form action="member.jsp">
+        숫자1 : <input type="text" name="n1" id="n1" value="200"><br> 숫자2 : <input type="text" name="n2" id="n2" value="100"><br>
+        <button type="button" onclick="sum()">두 수를 더하자!</button>
+    </form>
+    <form action="member.jsp">
+        숫자3 : <input type="text" name="n3" id="n3"><br> 숫자4 : <input type="text" name="n4" id="n4"><br>
+        <button type="button" onclick="minus()">두 수를 빼자!</button>
+    </form>
+
+</body>
+
+</html>

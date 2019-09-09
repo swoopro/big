@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /* alert("경고의 의미! 밥을꼭먹자");
+                                                var result = confirm("밥을 먹었나요?");
+                                                alert("확인 결과" + result);
+                                                var data = prompt("당신이 지금 하고 있는 언어의이름은?"); //joptionmessage같은거
+                                                alert("언어의 이름은 " + data);
+                                                console.log("언어의 이름은 " + data); //sysoutprint 같은거임
+                                                //크롬에서 f12 누르면 개발자화면볼수있음 */
+        function member() {
+            alert("함수가 호술됨.");
+            console.log("함수가 호출됨");
+        }
+
+        function server() {
+            location.href = "http://www.naver.com";
+            //location : 내장된 객체
+            //location, body, history
+        }
+
+        function daum() {
+            location.href = "http://www.daum.net";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>회원가입</h1>
+    <form action="member.jsp">
+        아이디: <input type="text" name="id"><br>
+        <button type="button" onclick="member()">회원가입</button>
+        <!-- onclick : 클릭할때 메소드호출 -->
+        <button type="button" onclick="server()">서버로전송</button>
+        <button type="button" onclick="daum()">다음으로</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var name = prompt("이름을 입력해주세요. ");
+        console.log(name + "씨 환영합니다.");
+        var tel = prompt("전화번호를 입력해주세요. ");
+        console.log("당신의 전화번호는" + tel);
+
+        function plus() {
+            var data1 = document.getElementById("n1");
+            var data2 = document.getElementById("n2");
+            var value1 = data1.value;
+            var value2 = data2.value;
+            var data11 = parseInt(value1);
+            var data22 = parseInt(value2);
+            var plus = data11 + data22;
+            alert(plus);
+        }
+
+        function minus() {
+            var data1 = document.getElementById("n1");
+            var data2 = document.getElementById("n2");
+            var value1 = data1.value;
+            var value2 = data2.value;
+            var data11 = parseInt(value1);
+            var data22 = parseInt(value2);
+            var minus = data11 - data22;
+            alert(minus);
+        }
+
+        function mul() {
+            var data1 = document.getElementById("n1");
+            var data2 = document.getElementById("n2");
+            var value1 = data1.value;
+            var value2 = data2.value;
+            var data11 = parseInt(value1);
+            var data22 = parseInt(value2);
+            var mul = data11 * data22;
+            alert(mul);
+        }
+
+        function divide() {
+            var data1 = document.getElementById("n1");
+            var data2 = document.getElementById("n2");
+            var value1 = data1.value;
+            var value2 = data2.value;
+            var data11 = parseInt(value1);
+            var data22 = parseInt(value2);
+            var divide = data11 / data22;
+            alert(divide);
+        }
+
+        function naver() {
+            location.href = "http://www.naver.com";
+        }
+
+        function daum() {
+            location.href = "http://www.daum.net";
+        }
+
+        function google() {
+            location.href = "http://www.google.com";
+        }
+
+        function up() {
+            var data1 = document.getElementById("n3"); //id가 n3인 객체를가져온것
+            var value1 = data1.value; // 그중에 값을가져와서
+            var data11 = parseInt(value1); //인트변환해주고
+            data11++; //그값을 1씩증가
+            data1.value = data11; //그걸 다시 값에 넣어줌
+            console.log(data1.value);
+        }
+
+        function down() {
+            var data1 = document.getElementById("n3");
+            var value1 = data1.value;
+            var data11 = parseInt(value1);
+            data11--;
+            data1.value = data11;
+            console.log(data1.value);
+        }
+
+        // function xx() {
+        //     var data1 = document.getElementById("n3");
+        //     var value = data1.value;
+        //     var data11 = parseInt(value);
+        //     data11 = 0;
+        //     data1.value = data11;
+        //     console.log(data1.value);
+        // }
+        function xx() {
+            var data1 = document.getElementById("n3");
+            data1.value = 0;
+            console.log(data1.value);
+        }
+    </script>
+</head>
+
+<body>
+    <form action="server.jsp">
+        글번호 <input type="text" name="id"><br> 제목 <input type="text" name="title"><br> 글내용 <input type="text" name="content"><br> 글쓴이 <input type="text" name="writer"><br>
+        <input type="submit" value="전송">
+    </form>
+    <hr> 숫자1
+    <input type="text" name="n1" id="n1">
+    <br> 숫자2
+    <input type="text" name="n2" id="n2">
+    <br>
+    <button type="button" onclick="plus()">더하기</button>
+    <br>
+    <button type="button" onclick="minus()">빼기</button>
+    <br>
+    <button type="button" onclick="mul()">곱하기</button>
+    <br>
+    <button type="button" onclick="divide()">나누기</button>
+    <hr>
+    <button type="button" onclick="naver()">네이버</button>
+    <button type="button" onclick="daum()">다음</button>
+    <button type="button" onclick="google()">구글</button>
+    <hr> 숫자3 <input type="text" name="n3" id="n3"><br>
+    <button type="button" onclick="up()">+1</button>
+    <button type="button" onclick="down()">-1</button>
+    <button type="button" onclick="xx()">초기화</button>
+
+
+</body>
+
+</html>

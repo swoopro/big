@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* 자동주석: ctrl + shift + /  */
+/* 선택 -> 스타일 여러개 지정 */
+body {/* 선택자 */
+    background: green;/* 속성 */
+    color:blue;
+}
+h3{
+    background: white;
+}
+h4{
+    background: yellow;
+}
+h5{
+    background: pink;
+}

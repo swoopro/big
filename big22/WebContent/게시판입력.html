@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <style>
+        body {
+            color: blue;
+        }
+        
+        input {
+            background: skyblue;
+            color: blanchedalmond
+        }
+        
+        input[type="submit"] {
+            background: saddlebrown;
+        }
+        
+        input[type="submit"]:hover {
+            background: gold;
+        }
+        
+        input:hover {
+            background: black;
+            color: darkcyan;
+            width: 150px;
+            height: 50;
+            box-shadow: 20px 20px gray;
+        }
+        
+        input:focus {
+            background: yellow;
+            color: brown
+        }
+        
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: green;
+            box-shadow: 20px 20px black;
+        }
+        
+        a:link {
+            color: blueviolet;
+            background: gray;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: hotpink;
+            background: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="bbs.jsp">
+        아이디:<input type="text" name="id"><br> 제목:
+        <input type="text" name="title"><br> 내용:
+        <input type="text" name="content"><br> 글쓴이:
+        <input type="text" name="writer"><br>
+        <input type="submit" value="전송">
+
+    </form>
+    <br><br>
+    <a href="http://www.daum.net">다음</a><br>
+    <a href="http://www.asd.com">아무거나</a>
+</body>
+
+</html>

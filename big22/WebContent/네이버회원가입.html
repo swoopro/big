@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <style>
+        body {
+            color: green;
+        }
+        
+        input {
+            background: yellow;
+            color: blue;
+        }
+        
+        input:focus {
+            background: black;
+            color: white;
+        }
+        
+        input:hover {
+            background: green;
+            color: red;
+            width: 150px;
+            height: 50px;
+            box-shadow: 20px 20px red;
+        }
+        
+        input[type="submit"] {
+            background: red;
+        }
+        
+        input[type="submit"]:hover {
+            background: gold;
+        }
+        
+        a:link {
+            background: greenyellow;
+            color: yellow;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: ivory;
+            box-shadow: 10px 10px gray;
+        }
+        
+        a:visited {
+            color: hotpink;
+            box-shadow: 10px 10px hotpink;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="member2.jsp">
+        <!-- id: meta데이터 -->
+        아이디: <input type="text" name="id"><br>
+        <!-- map타입으로전송 -->
+        비밀번호: <input type="password" name="pw"><br> 이름: <input type="text" name="name"><br> 전화번호: <input type="text" name="tel"><br>
+        <input type="submit" value="서버로 전송">
+    </form>
+    <br><br>
+    <a href="http://www.naver.com">네이버</a><br>
+    <a href="http://www.naver.com">몰라사이트</a>
+
+</body>
+
+</html>

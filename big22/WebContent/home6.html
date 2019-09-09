@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        text-align: center;
+    }
+    
+    li {
+        list-style: none;
+        float: left;
+        /* 붙여줌 */
+        padding: 15px;
+        /* 사방으로 띄워쓰기해주는거 */
+        /* background: red;  */
+    }
+    
+    li:nth-child(2n) {
+        /* 짝수번째 */
+        background: pink;
+    }
+    /* 홀수번째 */
+    
+    li:nth-child(2n+1) {
+        background: lightgreen;
+    }
+    
+    li:first-child {
+        border-radius: 20px 0 0 20px;
+    }
+    /* 시계방향으로 차례대로 4군데 ,하나만쓰면 전부다깎음 */
+    
+    li:last-child {
+        border-radius: 0 20px 20px 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: chocolate;
+    }
+    
+    ul {
+        padding-left: 550px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="home6.html">회사소개</a></li>
+        <li><a href="home7.html">회사제품</a></li>
+        <li><a href="home8.html">회사구성원</a></li>
+        <li><a href="home9.html">오시는길</a></li>
+        <li><a href="home10.html">고객센터</a></li>
+
+    </ul>
+    <br><br>
+    <br>
+
+    <hr>
+    <img src="img/3.jpg">
+    <br> 오뚜기주식회사
+
+    <br> 연락처: 070-1235-5463<br> 주소: 서대문구 신촌동<br> 이메일: asd@asdsadsa.com
+</body>
+
+</html>
