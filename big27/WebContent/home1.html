@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Content Delivery Network(CDN방식) -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-3.4.1.js">
+</script>
+<script type="text/javascript">
+	$(function() { //아래 body부분을 먼저읽고, 함수 내에 있는
+				   //것을 처리하라는 의미!
+				   
+		var content = document.getElementById("p").textContent;
+		alert(content);
+
+	/* $("p") : 태그 선택
+	$(".p") : 클래스 선택
+	$("#p") : id선택  */
+	//call-back함수
+	$("button").click(function() {//익명함수
+		alert("버튼이 눌러졌어요!");
+		alert("나는 버튼을 클릭하면 자동으로 호출되는 익명함수");
+	});
+	
+	$("#b2").click(function() {
+		alert("나도");
+	});
+	
+	$("#b3").click(function() {
+		var id = $("#id").val(); //자바스크립트에서 .value와 흡사
+		// alert(id.length);
+		if(id.length < 5) {
+			alert("5글자 이상의 id를 입력해야합니다.");
+			$("#id").val(""); //다형성 위에 입력값이 없는건 가져오는거 
+								//입력값이있으면 넣어주는거
+			return false;
+		}
+	});
+	});
+</script>
+</head>
+<body>
+	<p id="p">내가 제이쿼리에요</p>
+	<button type="button">나를 눌러요</button>
+	<button type="button" id="b2">나도 내용 보여주세요</button>
+	<br><br>
+	<form action="server.jsp">
+	아이디: <input type="text" id="id" name="id"><br>
+	<button type="submit" id="b3">아이디 체크</button>
+	</form>
+</body>
+</html>

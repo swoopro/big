@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(function() {
+            $("#b1").click(function() {
+                console.log("내가 자동으로 호출되었어요!");
+                //p태그의 text content를 가지고 와서
+                var text = $("p").text(); //js의textContent
+                console.log(text);
+                //result id에 value로 넣으세요.
+                $("#result").val(text);
+                //$("div").append(text + "<br>"); //append누적해주는거 채팅프로그램할때썼던거
+                $("div").append("<img src='img/car.png'>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>오늘 수요일은 너무길어요</p>
+    <input type="button" id="b1" value="나를 눌러요!"><br>
+    <input type="text" id="result">
+    <div></div>
+
+</body>
+
+</html>
