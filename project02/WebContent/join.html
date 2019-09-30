@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+
+<head>
+    <title>회원가입 페이지</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/join.css"> <!-- css 연결 설정 -->
+    <script src="js/jquery-3.4.1.js"></script> <!-- jquery 연결 설정 -->
+    <script src="js/join.js"></script> <!-- javascript 연결 설정 -->
+
+</head>
+
+<body>
+    <div class="hr">
+        <h1><br>Watch a Movie</h1>
+    </div>
+    <form action="join.jsp" >
+    <div class="hr">
+        <!-- 아이디: 중복, 글자수 -->
+        <!-- 비밀번호: 안보이게, 글자수, 비밀번호 확인 -->
+        <!-- 이름: 한글2글자 이상 -->
+        <!-- 탄생년도: 숫자 4자리만 되게 -->
+        <!-- 전화번호: 11자리 이하 -->
+        <!-- 이메일: 제한없음 -->
+        <!-- 선호장르1,2,3: 액션/코미디/로맨스/애니메이션/공포 다섯개만 가능하게 -->
+        
+            <table border="1" align="center">
+                <tr>
+                    <td>아이디</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="id" id="id" maxlength="20" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="idC"></div> <!-- id 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="password" name="pw" id="pw" maxlength="20" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="pwC"></div> <!-- pw 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="password" name="pw2" id="pw2" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="pw2C"></div> <!-- pw확인 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="text" name="name" id="name" maxlength="10" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="nameC"></div> <!-- name 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>탄생년도</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="text" name="birth" id="birth" placeholder="    태어난 년도를 숫자 4자리로 입력 (1900년에서 2018년까지만 입력가능)" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="birthC"></div> <!-- birth 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="text" name="tel" id="tel" placeholder="    '-' 빼고 입력" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="telC"></div> <!-- birth 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="text" name="email" id="email" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>선호장르1</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="text" name="fJenre1" id="fJenre1" placeholder="    액션/코미디/로맨스/애니메이션/공포 중 1개 입력" width="600" height="50">
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="fJenre1C"></div> <!-- fJenre1 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>선호장르2</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="text" name="fJenre2" id="fJenre2" placeholder="    액션/코미디/로맨스/애니메이션/공포 중 1개 입력" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="fJenre2C"></div> <!-- fJenre2 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>선호장르3</td>
+                </tr>
+                <tr>
+                    <td>
+                    	<input type="text" name="fJenre3" id="fJenre3" placeholder="    액션/코미디/로맨스/애니메이션/공포 중 1개 입력" width="600" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="fJenre3C"></div> <!-- fJenre3 입력조건 확인창 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit" id="b1">회원가입</button></td>
+                </tr>
+
+            </table>
+    	</div>
+    </form>	
+    
+</body>
+
+</html>

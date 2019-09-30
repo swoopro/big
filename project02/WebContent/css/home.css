@@ -1,0 +1,30 @@
+body {
+    background: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20;
+}
+
+#d1 {
+    width: 200px;
+    height: auto;
+    margin-left: 1200px;
+}
+
+#d2 {
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+}
+.fjanre{
+    width: 1300px;
+    height: auto;
+    margin-left:100px;   
+    overflow-x:auto;	/* 내용이 가로길이를넘으면 자동으로 가로스크롤바 */
+   /*  overflow-x:scroll;=스크롤무조건보이게, overflow-x:hidden;=스크롤안보이게 
+   				x=가로   , y=세로           */
+    white-space:nowrap; /* 줄바꿈 하지않는다 */
+}
